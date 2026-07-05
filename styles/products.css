@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+body {
+  background-color: #6fa02c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: aliceblue;
+  width: 90%;
+  height: 80%;
+  margin-top: 2rem;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  flex: 1;
+  padding: 0rem 1rem 0rem 0rem;
+}
+
+.texts h4 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.texts p{
+  font-size: 0.8rem;
+  text-align: justify;
+}
+
+.texts span {
+  color: #05411c;
+}
+
+.products {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: 100px;
+  flex: 2;
+  padding: 0rem 0rem 0rem 1rem;
+}
+
+.box{
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background-size: cover;
+  background-position: top;
+  background-color: #383838;
+  background-blend-mode: overlay;
+  transition: all 1s ease-in-out;
+}
+
+.box:hover{
+  background-color: #6d6d6d;
+  background-position: center;
+  cursor: grabbing;
+}
+
+.row-2{
+  grid-row: span 2;
+}
+
+.col-2{
+  grid-column: span 2;
+}
