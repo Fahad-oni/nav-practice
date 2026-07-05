@@ -6,7 +6,8 @@
 nav {
   height: 40px;
   width: 100%;
-  background-color: #333;
+  background-color: #2f5d2e;
+  backdrop-filter: calc();
   position: fixed;
   top: 0;
 }
@@ -21,11 +22,14 @@ nav ul {
 li a {
   text-decoration: none;
   color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  padding: 10px 18px;
+  border-radius: 0.7rem;
+  transition: all 0.2s ease;
 }
 
 li a:hover {
-  background-color: #027c9d;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(10px); /* Safari */
+  border: 1px solid rgba(50, 50, 50, 0.2);
 }
