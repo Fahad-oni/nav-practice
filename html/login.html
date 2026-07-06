@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>login-page</title> 
-  <link rel="stylesheet" href="/styles/login.css">
-  <link rel="stylesheet" href="/styles/nav.css">
+  <title>login-page</title>
+  <link rel="stylesheet" href="../styles/login.css">
+  <link rel="stylesheet" href="../styles/nav.css">
 </head>
+
 <body>
   <nav>
     <ul>
@@ -19,7 +21,29 @@
   </nav>
 
   <main>
+    <div class="container">
+      <div class="login-form">
+        <h2>LOGIN</h2>
+        <p>Sign in to your FreshBasket account and enjoy fresh groceries delivered right to your doorstep.</p>
 
+        
+          <form action="#">
+            <label for="email">Email</label>
+            <input type="email" class="login-email" name="email" placeholder="Enter your email"> <br>
+
+            <label for="password">Password</label>
+            <input type="password" class="login-pass" name="password" placeholder="*****" required> <br>
+
+            <button type="submit">LogIn</button>
+          </form>
+        
+
+      </div>
+      <div class="login-img">
+        <img src="/images/login.png" alt="login img">
+      </div>
+    </div>
   </main>
 </body>
+
 </html>
